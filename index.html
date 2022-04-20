@@ -8,28 +8,35 @@
 </head>
 <style>
     body {
-        background-color: #e7e3ba;
-        font-family: Arial, sans-serif;
+    background-color: #e7e3ba;
+    font-family: Arial, sans-serif;
     }
-    .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
     }
-    .row::after {
-    content: "";
-    clear: both;
-    display: table;
+
+    img {
+    max-width: 100%
+    }
+
+    .image {
+    flex-basis: 40%
+    }
+
+    .text {
+    font-size: 20px;
+    padding-left: 20px;
     }
 </style>
 <body>
-    <div class="row">
-        <div class="column">
-          <img src="Linux-Distro-Custom-Logo.png" alt="logo" style="width:100%">
+    <div class="container">
+        <div class="image">
+          <img src="Linux-Distro-Custom-Logo.png">
         </div>
-        <div class="column">
+        <div class="text">
           <h1>Next OS official website</h1>
-        </div>
         </div>
       </div>
     
