@@ -11,19 +11,27 @@
         background-color: #e7e3ba;
         font-family: Arial, sans-serif;
     }
+    .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    }
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
 </style>
 <body>
-    <div id="container" style="white-space:nowrap">
-
-        <div id="image" style="display:inline;">
-            <img src="Linux-Distro-Custom-Logo.png" width="64" height="64"/>
+    <div class="row">
+        <div class="column">
+          <img src="Linux-Distro-Custom-Logo.png" alt="logo" style="width:100%">
         </div>
-    
-        <div id="texts" style="display:inline; white-space:nowrap;"> 
-            Next OS official website
+        <div class="column">
+          <h1>Next OS official website</h1>
         </div>
-    
-    </div>
+        </div>
+      </div>
     
     <p>Welcome to the official Next OS website!</p>
     <h2>What is Next OS?</h1>
